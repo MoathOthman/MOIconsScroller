@@ -8,13 +8,13 @@
 #import "IconView.h"
 #import "IconsScrollerDataSource.h"
 @class iconsLayoutLL;
-@interface IconsScroller : UIScrollView<IconsScrollerDataSource,IconsScrollerDelegate>{
+@interface MOIconsScroller : UIScrollView<MOIconsScrollerDataSource,MOIconsScrollerDelegate>{
     iconsLayoutLL *_layoutLL;
 
 }
 @property(nonatomic,assign)int numberOfNodes;
-@property(assign,nonatomic)id<IconsScrollerDataSource>dataSource;
-@property(assign,nonatomic)id<IconsScrollerDelegate>iconDelegate;
+@property(assign,nonatomic)id<MOIconsScrollerDataSource>dataSource;
+@property(assign,nonatomic)id<MOIconsScrollerDelegate>iconDelegate;
 
 -(void)insertIcon:(UIView*)icon atIndex:(int)i;
 

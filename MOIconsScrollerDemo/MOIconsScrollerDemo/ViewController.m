@@ -9,7 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    NSArray*playLists;
+    NSArray *imagesList;
+}
 @end
 
 @implementation ViewController
@@ -17,13 +20,59 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+        
+    /*set delegate and datasource ..very necessary*/
+    _iconScroller.dataSource=self;
+    _iconScroller.iconDelegate=self;
+    /*set titles and images names*/
+    playLists=@[@"somethings1",@"something2",@"vancouver",@"violin",@"crazygirl",@"waterSpout"];
+    imagesList=@[@"image2",@"image1",@"vancouver",@"violin",@"crazygirl",@"waterSpout"];
+
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(iconTappedNotificationRecieved:) name:iconDeletedNotification object:nil];
+    
+    
+}
+-(IBAction )AddANewIcon:(UIBarButtonItem*)sender{
+    static int x=1;
+    NSString*name;
+    name=[NSString stringWithFormat:@"icon#%i",x];
+    x++;
+    [[NSNotificationCenter defaultCenter]postNotificationName:AddNewIconNotification object:name];
 }
 
+-(void)iconTappedNotificationRecieved:(NSNotification*)notification{
+    if ([[notification name]isEqualToString:iconDeletedNotification]) {
+        [_iconScroller performSelector:@selector(removeIconAtIndex:) withObject: [notification object]  afterDelay:0];
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark iconsControllerDataSource
+-(NSInteger)numberOfIcons{
+    return playLists.count;
+}
+-(NSInteger)MaxumberOfIconsInEachRow{
+    return 3;
+}
+
+-(FolderIconView *)viewForIconAtIndex:(int)index{
+    
+    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];
+    _iconView.tag   =index;
+    
+    _iconView.titleLAbel.text=playLists[index];
+    
+    _iconView.iconImageView.image= [UIImage imageNamed:imagesList[index]];
+    return _iconView;
+}
+-(void)iconView:(IconView *)iconView didTappedAtIndex:(NSInteger)index{
+    NSLog(@"in did tapp iconView title is %@",iconView.folderIconView.titleLAbel.text);
+    [[NSUserDefaults standardUserDefaults]setValue:iconView.folderIconView.titleLAbel.text forKey:CURRENT_PLAY_LIST_NAME];
+    
 }
 
 @end

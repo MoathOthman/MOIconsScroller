@@ -8,13 +8,13 @@
 
 @class FolderIconView;
 @class IconView;
-@protocol IconsScrollerDataSource <NSObject>
+@protocol MOIconsScrollerDataSource <NSObject>
 @required
 -(NSInteger)numberOfIcons;
 -(NSInteger)MaxumberOfIconsInEachRow;
 -(FolderIconView*)viewForIconAtIndex:(int)index;
  @end
-@protocol IconsScrollerDelegate <NSObject>
+@protocol MOIconsScrollerDelegate <NSObject>
 @required
  -(void)iconView:(IconView* )iconView didTappedAtIndex:(NSInteger)index;
 @end

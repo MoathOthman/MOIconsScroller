@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 moath othman. All rights reserved.
 //
 
-#import "IconsScroller.h"
+#import "MOIconsScroller.h"
 #import "IconView.h"
 #import "iconsLayoutLL.h"
-@implementation IconsScroller
+@implementation MOIconsScroller
 
 - (id)init
 {
@@ -53,7 +53,7 @@
     }
     
 }
--(void)addNewIcon:(IconsScroller*)scroller withName:(NSString*)name{
+-(void)addNewIcon:(MOIconsScroller*)scroller withName:(NSString*)name{
     NSLog(@"number of icons is %i",[_dataSource numberOfIcons]);
     
     FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];

@@ -9,7 +9,7 @@
 #import "IconsScroller+remover.h"
 #import "IconView.h"
 #import "iconsLayoutLL.h"
-@implementation IconsScroller (remover)
+@implementation MOIconsScroller (remover)
  
  - (CGRect)SearchAndRemove:(NSNumber *)index {
     static CGRect preRect;

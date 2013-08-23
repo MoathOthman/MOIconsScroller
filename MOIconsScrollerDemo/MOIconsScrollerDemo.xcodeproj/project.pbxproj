@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0604A317C7A27E00985DBA /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A017C7A27E00985DBA /* image1.png */; };
+		EC0604A417C7A27E00985DBA /* waterSpout.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A117C7A27E00985DBA /* waterSpout.png */; };
+		EC0604A517C7A27E00985DBA /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A217C7A27E00985DBA /* image2.png */; };
+		EC0604A917C7A30600985DBA /* vancouver.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A617C7A30600985DBA /* vancouver.png */; };
+		EC0604AA17C7A30600985DBA /* violin.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A717C7A30600985DBA /* violin.png */; };
+		EC0604AB17C7A30600985DBA /* crazygirl.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A817C7A30600985DBA /* crazygirl.png */; };
 		EC41D59C17C77543004AAF0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41D59B17C77543004AAF0B /* Foundation.framework */; };
 		EC41D59E17C77543004AAF0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41D59D17C77543004AAF0B /* CoreGraphics.framework */; };
 		EC41D5A017C77543004AAF0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41D59F17C77543004AAF0B /* UIKit.framework */; };
@@ -25,7 +31,7 @@
 		EC41D5DE17C7757E004AAF0B /* IconNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41D5D417C7757E004AAF0B /* IconNode.m */; };
 		EC41D5DF17C7757E004AAF0B /* iconsLayoutLL.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41D5D617C7757E004AAF0B /* iconsLayoutLL.m */; };
 		EC41D5E017C7757E004AAF0B /* IconView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41D5D817C7757E004AAF0B /* IconView.m */; };
-		EC41D5E117C7757E004AAF0B /* IconsScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41D5D917C7757E004AAF0B /* IconsScroller.m */; };
+		EC41D5E117C7757E004AAF0B /* MOIconsScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41D5D917C7757E004AAF0B /* MOIconsScroller.m */; };
 		EC41D5E217C7757E004AAF0B /* IconsScroller+remover.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41D5DB17C7757E004AAF0B /* IconsScroller+remover.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC0604A017C7A27E00985DBA /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		EC0604A117C7A27E00985DBA /* waterSpout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterSpout.png; sourceTree = "<group>"; };
+		EC0604A217C7A27E00985DBA /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		EC0604A617C7A30600985DBA /* vancouver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vancouver.png; sourceTree = "<group>"; };
+		EC0604A717C7A30600985DBA /* violin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violin.png; sourceTree = "<group>"; };
+		EC0604A817C7A30600985DBA /* crazygirl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crazygirl.png; sourceTree = "<group>"; };
 		EC41D59817C77543004AAF0B /* MOIconsScrollerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOIconsScrollerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC41D59B17C77543004AAF0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC41D59D17C77543004AAF0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,11 +79,12 @@
 		EC41D5D617C7757E004AAF0B /* iconsLayoutLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iconsLayoutLL.m; sourceTree = "<group>"; };
 		EC41D5D717C7757E004AAF0B /* IconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconView.h; sourceTree = "<group>"; };
 		EC41D5D817C7757E004AAF0B /* IconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconView.m; sourceTree = "<group>"; };
-		EC41D5D917C7757E004AAF0B /* IconsScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsScroller.m; sourceTree = "<group>"; };
+		EC41D5D917C7757E004AAF0B /* MOIconsScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOIconsScroller.m; sourceTree = "<group>"; };
 		EC41D5DA17C7757E004AAF0B /* IconsScroller+remover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IconsScroller+remover.h"; sourceTree = "<group>"; };
 		EC41D5DB17C7757E004AAF0B /* IconsScroller+remover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IconsScroller+remover.m"; sourceTree = "<group>"; };
 		EC41D5DC17C7757E004AAF0B /* IconsScrollerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsScrollerDataSource.h; sourceTree = "<group>"; };
-		EC41D5E317C77599004AAF0B /* IconsScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsScroller.h; sourceTree = "<group>"; };
+		EC41D5E317C77599004AAF0B /* MOIconsScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOIconsScroller.h; sourceTree = "<group>"; };
+		EC41D5E417C77635004AAF0B /* CommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +111,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0604AD17C7AAA100985DBA /* iconsImages */ = {
+			isa = PBXGroup;
+			children = (
+				EC0604A017C7A27E00985DBA /* image1.png */,
+				EC0604A117C7A27E00985DBA /* waterSpout.png */,
+				EC0604A217C7A27E00985DBA /* image2.png */,
+				EC0604A617C7A30600985DBA /* vancouver.png */,
+				EC0604A717C7A30600985DBA /* violin.png */,
+				EC0604A817C7A30600985DBA /* crazygirl.png */,
+			);
+			name = iconsImages;
+			sourceTree = "<group>";
+		};
 		EC41D58F17C77543004AAF0B = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +163,7 @@
 				EC41D5AD17C77543004AAF0B /* Main.storyboard */,
 				EC41D5B017C77543004AAF0B /* ViewController.h */,
 				EC41D5B117C77543004AAF0B /* ViewController.m */,
+				EC0604AD17C7AAA100985DBA /* iconsImages */,
 				EC41D5B317C77543004AAF0B /* Images.xcassets */,
 				EC41D5A217C77543004AAF0B /* Supporting Files */,
 			);
@@ -175,6 +202,7 @@
 		EC41D5D017C7754E004AAF0B /* MOIconsScroller */ = {
 			isa = PBXGroup;
 			children = (
+				EC41D5E417C77635004AAF0B /* CommonMacros.h */,
 				EC41D5D117C7757E004AAF0B /* FolderIconView.h */,
 				EC41D5D217C7757E004AAF0B /* FolderIconView.m */,
 				EC41D5D317C7757E004AAF0B /* IconNode.h */,
@@ -183,8 +211,8 @@
 				EC41D5D617C7757E004AAF0B /* iconsLayoutLL.m */,
 				EC41D5D717C7757E004AAF0B /* IconView.h */,
 				EC41D5D817C7757E004AAF0B /* IconView.m */,
-				EC41D5E317C77599004AAF0B /* IconsScroller.h */,
-				EC41D5D917C7757E004AAF0B /* IconsScroller.m */,
+				EC41D5E317C77599004AAF0B /* MOIconsScroller.h */,
+				EC41D5D917C7757E004AAF0B /* MOIconsScroller.m */,
 				EC41D5DA17C7757E004AAF0B /* IconsScroller+remover.h */,
 				EC41D5DB17C7757E004AAF0B /* IconsScroller+remover.m */,
 				EC41D5DC17C7757E004AAF0B /* IconsScrollerDataSource.h */,
@@ -268,9 +296,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0604A517C7A27E00985DBA /* image2.png in Resources */,
 				EC41D5B417C77543004AAF0B /* Images.xcassets in Resources */,
+				EC0604AB17C7A30600985DBA /* crazygirl.png in Resources */,
 				EC41D5A617C77543004AAF0B /* InfoPlist.strings in Resources */,
+				EC0604A317C7A27E00985DBA /* image1.png in Resources */,
+				EC0604A417C7A27E00985DBA /* waterSpout.png in Resources */,
 				EC41D5AF17C77543004AAF0B /* Main.storyboard in Resources */,
+				EC0604A917C7A30600985DBA /* vancouver.png in Resources */,
+				EC0604AA17C7A30600985DBA /* violin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +327,7 @@
 				EC41D5AC17C77543004AAF0B /* AppDelegate.m in Sources */,
 				EC41D5DF17C7757E004AAF0B /* iconsLayoutLL.m in Sources */,
 				EC41D5A817C77543004AAF0B /* main.m in Sources */,
-				EC41D5E117C7757E004AAF0B /* IconsScroller.m in Sources */,
+				EC41D5E117C7757E004AAF0B /* MOIconsScroller.m in Sources */,
 				EC41D5DE17C7757E004AAF0B /* IconNode.m in Sources */,
 				EC41D5E217C7757E004AAF0B /* IconsScroller+remover.m in Sources */,
 				EC41D5DD17C7757E004AAF0B /* FolderIconView.m in Sources */,
@@ -500,6 +534,7 @@
 				EC41D5CC17C77543004AAF0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC41D5CD17C77543004AAF0B /* Build configuration list for PBXNativeTarget "MOIconsScrollerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +543,7 @@
 				EC41D5CF17C77543004AAF0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 moath othman. All rights reserved.
 //
 
-#import "IconsScroller.h"
+#import "MOIconsScroller.h"
 
-@interface IconsScroller (remover)
+@interface MOIconsScroller (remover)
 -(void)removeIconAtIndex:(NSNumber*)index;
 
 @end

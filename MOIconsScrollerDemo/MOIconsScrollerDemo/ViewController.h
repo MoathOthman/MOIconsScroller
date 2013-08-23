@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 moath othman. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "IconsScroller+remover.h"
+@interface ViewController : UIViewController<MOIconsScrollerDataSource,MOIconsScrollerDelegate>
+@property (weak, nonatomic) IBOutlet MOIconsScroller *iconScroller;
+-(IBAction )AddANewIcon:(UIBarButtonItem*)sender;
 @end
