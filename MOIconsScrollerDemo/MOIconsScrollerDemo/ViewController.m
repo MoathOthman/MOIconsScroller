@@ -10,8 +10,7 @@
 
 @interface ViewController ()
 {
-    NSArray*playLists;
-    NSArray *imagesList;
+     NSArray *imagesList;
 }
 @end
 
@@ -25,8 +24,7 @@
     _iconScroller.dataSource=self;
     _iconScroller.iconDelegate=self;
     /*set titles and images names*/
-    playLists=@[@"somethings1",@"something2",@"vancouver",@"violin",@"crazygirl",@"waterSpout"];
-    imagesList=@[@"image2",@"image1",@"vancouver",@"violin",@"crazygirl",@"waterSpout"];
+     imagesList=@[@"something1",@"something2",@"vancouver",@"violin",@"crazygirl",@"waterSpout",@"mountain",@"likeme",@"sweet",@"dontCare",@"snow"];
 
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(iconTappedNotificationRecieved:) name:iconDeletedNotification object:nil];
     
@@ -53,7 +51,7 @@
 
 #pragma mark iconsControllerDataSource
 -(NSInteger)numberOfIcons{
-    return playLists.count;
+    return imagesList.count;
 }
 -(NSInteger)MaxumberOfIconsInEachRow{
     return 3;
@@ -64,7 +62,7 @@
     FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];
     _iconView.tag   =index;
     
-    _iconView.titleLAbel.text=playLists[index];
+    _iconView.titleLAbel.text=imagesList[index];
     
     _iconView.iconImageView.image= [UIImage imageNamed:imagesList[index]];
     return _iconView;
