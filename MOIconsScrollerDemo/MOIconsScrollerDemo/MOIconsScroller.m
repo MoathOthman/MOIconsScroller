@@ -59,7 +59,7 @@
     FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];
     [_iconView setBackgroundColor:[UIColor greenColor]];
     _iconView.titleLAbel.text=name;
-    [scroller performSelector:@selector(addIcon:) withObject:_iconView afterDelay:1];
+    [scroller performSelector:@selector(addIcon:) withObject:_iconView afterDelay:0];
     
 }
  -(void)addIcon:(FolderIconView*)icon{
@@ -119,7 +119,9 @@
              [_layoutLL addAnode];
          }
     }
-     
+    
+    [self setContentSize:CGSizeMake(320, _layoutLL->lastNode.frame.origin.y+_layoutLL->lastNode.frame.size.height)];
+
     return 1;
 }
 

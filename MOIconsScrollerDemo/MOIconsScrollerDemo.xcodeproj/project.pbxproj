@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC0604A317C7A27E00985DBA /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A017C7A27E00985DBA /* image1.png */; };
+		EC0604A317C7A27E00985DBA /* something1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A017C7A27E00985DBA /* something1.png */; };
 		EC0604A417C7A27E00985DBA /* waterSpout.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A117C7A27E00985DBA /* waterSpout.png */; };
-		EC0604A517C7A27E00985DBA /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A217C7A27E00985DBA /* image2.png */; };
+		EC0604A517C7A27E00985DBA /* something2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A217C7A27E00985DBA /* something2.png */; };
 		EC0604A917C7A30600985DBA /* vancouver.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A617C7A30600985DBA /* vancouver.png */; };
 		EC0604AA17C7A30600985DBA /* violin.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A717C7A30600985DBA /* violin.png */; };
 		EC0604AB17C7A30600985DBA /* crazygirl.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604A817C7A30600985DBA /* crazygirl.png */; };
+		EC0604B317C7AB0800985DBA /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604AE17C7AB0800985DBA /* mountain.png */; };
+		EC0604B417C7AB0800985DBA /* likeme.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604AF17C7AB0800985DBA /* likeme.png */; };
+		EC0604B517C7AB0800985DBA /* sweet.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604B017C7AB0800985DBA /* sweet.png */; };
+		EC0604B617C7AB0800985DBA /* dontCare.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604B117C7AB0800985DBA /* dontCare.png */; };
+		EC0604B717C7AB0800985DBA /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0604B217C7AB0800985DBA /* snow.png */; };
 		EC41D59C17C77543004AAF0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41D59B17C77543004AAF0B /* Foundation.framework */; };
 		EC41D59E17C77543004AAF0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41D59D17C77543004AAF0B /* CoreGraphics.framework */; };
 		EC41D5A017C77543004AAF0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC41D59F17C77543004AAF0B /* UIKit.framework */; };
@@ -46,12 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC0604A017C7A27E00985DBA /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		EC0604A017C7A27E00985DBA /* something1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = something1.png; sourceTree = "<group>"; };
 		EC0604A117C7A27E00985DBA /* waterSpout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterSpout.png; sourceTree = "<group>"; };
-		EC0604A217C7A27E00985DBA /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		EC0604A217C7A27E00985DBA /* something2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = something2.png; sourceTree = "<group>"; };
 		EC0604A617C7A30600985DBA /* vancouver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vancouver.png; sourceTree = "<group>"; };
 		EC0604A717C7A30600985DBA /* violin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violin.png; sourceTree = "<group>"; };
 		EC0604A817C7A30600985DBA /* crazygirl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crazygirl.png; sourceTree = "<group>"; };
+		EC0604AE17C7AB0800985DBA /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountain.png; sourceTree = "<group>"; };
+		EC0604AF17C7AB0800985DBA /* likeme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeme.png; sourceTree = "<group>"; };
+		EC0604B017C7AB0800985DBA /* sweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sweet.png; sourceTree = "<group>"; };
+		EC0604B117C7AB0800985DBA /* dontCare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dontCare.png; sourceTree = "<group>"; };
+		EC0604B217C7AB0800985DBA /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
 		EC41D59817C77543004AAF0B /* MOIconsScrollerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOIconsScrollerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC41D59B17C77543004AAF0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC41D59D17C77543004AAF0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,9 +124,14 @@
 		EC0604AD17C7AAA100985DBA /* iconsImages */ = {
 			isa = PBXGroup;
 			children = (
-				EC0604A017C7A27E00985DBA /* image1.png */,
+				EC0604AE17C7AB0800985DBA /* mountain.png */,
+				EC0604AF17C7AB0800985DBA /* likeme.png */,
+				EC0604B017C7AB0800985DBA /* sweet.png */,
+				EC0604B117C7AB0800985DBA /* dontCare.png */,
+				EC0604B217C7AB0800985DBA /* snow.png */,
+				EC0604A017C7A27E00985DBA /* something1.png */,
 				EC0604A117C7A27E00985DBA /* waterSpout.png */,
-				EC0604A217C7A27E00985DBA /* image2.png */,
+				EC0604A217C7A27E00985DBA /* something2.png */,
 				EC0604A617C7A30600985DBA /* vancouver.png */,
 				EC0604A717C7A30600985DBA /* violin.png */,
 				EC0604A817C7A30600985DBA /* crazygirl.png */,
@@ -296,12 +311,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0604A517C7A27E00985DBA /* image2.png in Resources */,
+				EC0604A517C7A27E00985DBA /* something2.png in Resources */,
 				EC41D5B417C77543004AAF0B /* Images.xcassets in Resources */,
 				EC0604AB17C7A30600985DBA /* crazygirl.png in Resources */,
+				EC0604B417C7AB0800985DBA /* likeme.png in Resources */,
+				EC0604B617C7AB0800985DBA /* dontCare.png in Resources */,
 				EC41D5A617C77543004AAF0B /* InfoPlist.strings in Resources */,
-				EC0604A317C7A27E00985DBA /* image1.png in Resources */,
+				EC0604A317C7A27E00985DBA /* something1.png in Resources */,
 				EC0604A417C7A27E00985DBA /* waterSpout.png in Resources */,
+				EC0604B317C7AB0800985DBA /* mountain.png in Resources */,
+				EC0604B517C7AB0800985DBA /* sweet.png in Resources */,
+				EC0604B717C7AB0800985DBA /* snow.png in Resources */,
 				EC41D5AF17C77543004AAF0B /* Main.storyboard in Resources */,
 				EC0604A917C7A30600985DBA /* vancouver.png in Resources */,
 				EC0604AA17C7A30600985DBA /* violin.png in Resources */,

@@ -65,6 +65,7 @@
     _iconView.titleLAbel.text=imagesList[index];
     
     _iconView.iconImageView.image= [UIImage imageNamed:imagesList[index]];
+    
     return _iconView;
 }
 -(void)iconView:(IconView *)iconView didTappedAtIndex:(NSInteger)index{

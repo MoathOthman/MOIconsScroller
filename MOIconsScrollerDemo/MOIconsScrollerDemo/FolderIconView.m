@@ -53,7 +53,7 @@
     _titleLAbel.textColor=[UIColor blackColor];
     _titleLAbel.textAlignment=NSTextAlignmentCenter;
     _titleLAbel.text=@"shared"    ;
-    
+    [_titleLAbel setAdjustsFontSizeToFitWidth:YES];
     
     [self addSubview:_titleLAbel];
     

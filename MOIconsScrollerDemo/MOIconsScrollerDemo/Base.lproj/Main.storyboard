@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ntt-cN-aEq" customClass="MOIconsScroller">
-                                <rect key="frame" x="0.0" y="78" width="320" height="403"/>
+                                <rect key="frame" x="0.0" y="70" width="320" height="371"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9p-Sl-Urd">
@@ -47,18 +47,6 @@
             <point key="canvasLocation" x="214" y="58"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="MOIconsScroller" superclassName="UIScrollView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MOIconsScroller.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="AddANewIcon:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="iconScroller" candidateClass="MOIconsScroller"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
