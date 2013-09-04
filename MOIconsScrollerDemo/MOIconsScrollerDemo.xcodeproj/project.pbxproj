@@ -139,6 +139,36 @@
 			name = iconsImages;
 			sourceTree = "<group>";
 		};
+		EC1BC19717D7EA57009A9F58 /* IconLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				EC1BC19917D7EA7A009A9F58 /* IconLayOut */,
+				EC41D5D317C7757E004AAF0B /* IconNode.h */,
+				EC41D5D417C7757E004AAF0B /* IconNode.m */,
+				EC41D5D517C7757E004AAF0B /* iconsLayoutLL.h */,
+				EC41D5D617C7757E004AAF0B /* iconsLayoutLL.m */,
+			);
+			name = IconLinkedList;
+			sourceTree = "<group>";
+		};
+		EC1BC19817D7EA66009A9F58 /* CustomIconUpperView */ = {
+			isa = PBXGroup;
+			children = (
+				EC41D5D117C7757E004AAF0B /* FolderIconView.h */,
+				EC41D5D217C7757E004AAF0B /* FolderIconView.m */,
+			);
+			name = CustomIconUpperView;
+			sourceTree = "<group>";
+		};
+		EC1BC19917D7EA7A009A9F58 /* IconLayOut */ = {
+			isa = PBXGroup;
+			children = (
+				EC41D5D717C7757E004AAF0B /* IconView.h */,
+				EC41D5D817C7757E004AAF0B /* IconView.m */,
+			);
+			name = IconLayOut;
+			sourceTree = "<group>";
+		};
 		EC41D58F17C77543004AAF0B = {
 			isa = PBXGroup;
 			children = (
@@ -218,14 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				EC41D5E417C77635004AAF0B /* CommonMacros.h */,
-				EC41D5D117C7757E004AAF0B /* FolderIconView.h */,
-				EC41D5D217C7757E004AAF0B /* FolderIconView.m */,
-				EC41D5D317C7757E004AAF0B /* IconNode.h */,
-				EC41D5D417C7757E004AAF0B /* IconNode.m */,
-				EC41D5D517C7757E004AAF0B /* iconsLayoutLL.h */,
-				EC41D5D617C7757E004AAF0B /* iconsLayoutLL.m */,
-				EC41D5D717C7757E004AAF0B /* IconView.h */,
-				EC41D5D817C7757E004AAF0B /* IconView.m */,
+				EC1BC19817D7EA66009A9F58 /* CustomIconUpperView */,
+				EC1BC19717D7EA57009A9F58 /* IconLinkedList */,
 				EC41D5E317C77599004AAF0B /* MOIconsScroller.h */,
 				EC41D5D917C7757E004AAF0B /* MOIconsScroller.m */,
 				EC41D5DA17C7757E004AAF0B /* IconsScroller+remover.h */,

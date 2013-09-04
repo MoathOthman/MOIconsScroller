@@ -7,8 +7,6 @@
 //
 
 #import "MOIconsScroller.h"
-#import "IconView.h"
-#import "iconsLayoutLL.h"
 @implementation MOIconsScroller
 
 - (id)init

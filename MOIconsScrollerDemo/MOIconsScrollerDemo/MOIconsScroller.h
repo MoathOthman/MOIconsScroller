@@ -5,8 +5,9 @@
 //  Created by moath othman on 8/8/13.
 //  Copyright (c) 2013 moath othman. All rights reserved.
 //
-#import "IconView.h"
-#import "IconsScrollerDataSource.h"
+ #import "IconsScrollerDataSource.h"
+#import "iconsLayoutLL.h"
+
 @class iconsLayoutLL;
 @interface MOIconsScroller : UIScrollView<MOIconsScrollerDataSource,MOIconsScrollerDelegate>{
     iconsLayoutLL *_layoutLL;
