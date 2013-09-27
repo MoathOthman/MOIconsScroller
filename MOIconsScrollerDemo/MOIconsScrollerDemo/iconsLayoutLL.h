@@ -11,7 +11,9 @@
 @protocol LLOperations <NSObject>
 
 -(IconNode*)deleteWithTag:(int)tag;
--(void)insertFirstNode;
+//-(void)insertFirstNode;
+-(void)insertFirstNode ;
+
 -(void)addAnode;
  -(void)printOutLL;
 -(IconNode*)deleteLast;
@@ -33,6 +35,7 @@
     
 }
 - (id)initWithScrollerSize:(CGSize)size;
+- (id)initWithScrollerSize:(CGSize)size MaxNumberOFNodesInEachRow:(int)maxNumberOfNodes;
 
 @end
  

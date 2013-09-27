@@ -7,8 +7,7 @@
 //
 
 #import "IconNode.h"
-#define dimension 90
-
+ 
 @implementation IconNode
 -(id)initWithXPoint:(CGFloat)XPoint YPoint:(CGFloat)YPoint tag:(int)tag{
     self = [super init];

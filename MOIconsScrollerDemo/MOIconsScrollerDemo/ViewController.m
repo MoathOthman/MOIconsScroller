@@ -43,23 +43,19 @@
         [_iconScroller performSelector:@selector(removeIconAtIndex:) withObject: [notification object]  afterDelay:0];
     }
 }
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 #pragma mark iconsControllerDataSource
 -(NSInteger)numberOfIcons{
     return imagesList.count;
 }
 -(NSInteger)MaxumberOfIconsInEachRow{
-    return 3;
+    return 2;
 }
 
 -(FolderIconView *)viewForIconAtIndex:(int)index{
     
-    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];
+    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(15, 0, 90, 90)];
     _iconView.tag   =index;
     
     _iconView.titleLAbel.text=imagesList[index];

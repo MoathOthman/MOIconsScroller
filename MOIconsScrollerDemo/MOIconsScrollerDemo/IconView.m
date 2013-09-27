@@ -15,8 +15,8 @@
 @implementation IconView
 
 
-#define DeleteButtonFrame CGRectMake(0, 0, self.bounds.size.width, 30)
-#define ZeroFrame CGRectMake(0, 0, self.bounds.size.width, 0)
+#define DeleteButtonFrame CGRectMake(15, 0, self.bounds.size.width-30, 30)
+#define ZeroFrame CGRectMake(015, 0, self.bounds.size.width-30, 0)
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

@@ -22,6 +22,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _numberOfNodes=[_dataSource numberOfIcons];
+        _numberOfNodesInEachRow=[_dataSource MaxumberOfIconsInEachRow];
         
         [self AddingIcons];
         
@@ -54,7 +55,7 @@
 -(void)addNewIcon:(MOIconsScroller*)scroller withName:(NSString*)name{
     NSLog(@"number of icons is %i",[_dataSource numberOfIcons]);
     
-    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(0, 0, 90, 90)];
+    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(15, 0, 90, 90)];
     [_iconView setBackgroundColor:[UIColor greenColor]];
     _iconView.titleLAbel.text=name;
     [scroller performSelector:@selector(addIcon:) withObject:_iconView afterDelay:0];
@@ -63,8 +64,7 @@
  -(void)addIcon:(FolderIconView*)icon{
     
     [_layoutLL addAnode];
-     
-      [self setContentSize:CGSizeMake(320, _layoutLL->lastNode.frame.origin.y+_layoutLL->lastNode.frame.size.height)];
+      [self setContentSize:CGSizeMake(self.frame.size.width, _layoutLL->lastNode.frame.origin.y+_layoutLL->lastNode.frame.size.height)];
      
      if (self.contentSize.height>self.bounds.size.height) {
          CGPoint bottomOffset = CGPointMake(0, self.contentSize.height - self.bounds.size.height);
@@ -96,9 +96,7 @@
     
  }
 
-
-
-
+ 
 - (IconView *)createNewIconWithFrame:(iconsLayoutLL*)Layout
 {
     IconNode *currentNode=_layoutLL->lastNode;
@@ -109,8 +107,8 @@
 
 - (int)AddingIcons
 {
-    _layoutLL =[[iconsLayoutLL alloc]initWithScrollerSize:self.bounds.size ];
-    [_layoutLL insertFirstNode];
+    _layoutLL =[[iconsLayoutLL alloc]initWithScrollerSize:self.bounds.size MaxNumberOFNodesInEachRow:_numberOfNodesInEachRow ];
+    [_layoutLL insertFirstNode ];
       //for first Time
      for (int i=0; i<_numberOfNodes; i++ ) {
          IconNode *currentNode=[_layoutLL getNodeWithTag:i];
@@ -120,8 +118,9 @@
              [_layoutLL addAnode];
          }
     }
-    
-    [self setContentSize:CGSizeMake(320, _layoutLL->lastNode.frame.origin.y+_layoutLL->lastNode.frame.size.height)];
+    NSLog(@"sscroller width is %f",self.frame.size.width);
+
+    [self setContentSize:CGSizeMake(self.frame.size.width, _layoutLL->lastNode.frame.origin.y+_layoutLL->lastNode.frame.size.height)];
 
     return 1;
 }

@@ -14,6 +14,8 @@
 
 }
 @property(nonatomic,assign)int numberOfNodes;
+@property(nonatomic,assign)int numberOfNodesInEachRow;
+
 @property(assign,nonatomic)id<MOIconsScrollerDataSource>dataSource;
 @property(assign,nonatomic)id<MOIconsScrollerDelegate>iconDelegate;
 

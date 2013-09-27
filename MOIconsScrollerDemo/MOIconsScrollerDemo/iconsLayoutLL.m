@@ -7,15 +7,23 @@
 //
 
 #import "iconsLayoutLL.h"
-#define dimension 90
-@implementation iconsLayoutLL
-- (id)initWithScrollerSize:(CGSize)size
+
+
+#define nodesnumber 1
+@implementation iconsLayoutLL{
+    int maxNumberOfNodesInEachRow;
+    int startPoint;
+    int widthOfEachLine;
+    int xCounter;
+}
+- (id)initWithScrollerSize:(CGSize)size MaxNumberOFNodesInEachRow:(int)maxNumberOfNodes
 {
     self = [super init];
     if (self) {
         lastNode=nil;
         firstNode=nil;
         sizeOFScroller=size;
+        maxNumberOfNodesInEachRow=maxNumberOfNodes;
     }
     return self;
 }
@@ -25,26 +33,32 @@
 void desplay( iconsLayoutLL *d){
     NSLog(@"current node data is {%i,%i,%i}",d->lastXpoint,d->lastYpoint,d->tagTracker);
 }
--(void)insertFirstNode{
-    lastXpoint=15;
+-(void)insertFirstNode {
+    NSLog(@"width of the scroller is %f",sizeOFScroller.width);
+     widthOfEachLine=sizeOFScroller.width    ;
+    startPoint=(widthOfEachLine-maxNumberOfNodesInEachRow*(dimension) )/2+15;
+    
+    NSLog(@"Start Point %i",startPoint);
+
+    lastXpoint= startPoint;
     lastYpoint=15;
     tagTracker=0;
-    
+    xCounter=1;
     [self insertFirstWithTag:tagTracker XPoint:lastXpoint YPoint:lastYpoint];
    // desplay(self);
 }
 
 -(void)addAnode{
     
-    if ((lastXpoint>=225)) {
+    if (xCounter>=maxNumberOfNodesInEachRow) {
    //we hit the end of the row
-        lastXpoint=15;
+        lastXpoint=startPoint;
         lastYpoint+=105;
-        
+        xCounter=1;
     }else{
         //same line
         lastXpoint+=105;
-        
+        xCounter++;
     }
     tagTracker+=1;
     
@@ -52,7 +66,32 @@ void desplay( iconsLayoutLL *d){
 
   //  desplay(self);
 }
- 
+-(IconNode*)deleteLast{
+    IconNode *temp = lastNode;
+    
+    if (firstNode.next == NULL){
+        firstNode = NULL;
+    }else{
+        lastNode.prev.next = NULL;
+    }
+    lastNode = lastNode.prev;
+    
+    if (lastXpoint>=startPoint ) {//\\x=120
+        //we hit the end of the row
+        lastXpoint-=105;
+        xCounter --;
+    }else  {
+        
+        lastXpoint+=210;
+        lastYpoint-=105;
+        
+    }
+    tagTracker-=1;
+    
+    return temp;
+}
+
+
 -(void)insertFirstWithTag:(int)tag XPoint:(CGFloat)xpoint YPoint:(CGFloat)ypoint{
     IconNode *newNode=[[IconNode alloc]initWithXPoint:xpoint YPoint:ypoint tag:tag];
     
@@ -87,31 +126,7 @@ void desplay( iconsLayoutLL *d){
     firstNode = firstNode.next;
     return temp;
 }
--(IconNode*)deleteLast{
-    IconNode *temp = lastNode;
-    if (firstNode.next == NULL){
-        firstNode = NULL;
-    }else{
-        lastNode.prev.next = NULL;
-    }
-    lastNode = lastNode.prev;
-    
-    
 
-    if (lastXpoint>=15 ) {//\\x=120
-        //we hit the end of the row
-         lastXpoint-=105;
-
-    }else  {
-        
-        lastXpoint+=210;
-        lastYpoint-=105;
-        
-    }
-    tagTracker-=1;
-
-    return temp;
-}
 
 -(IconNode*)getNodeWithTag:(int)tag{
     IconNode *current =firstNode;
