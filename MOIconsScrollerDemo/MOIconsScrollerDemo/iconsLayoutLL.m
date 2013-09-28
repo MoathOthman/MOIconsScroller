@@ -34,8 +34,7 @@ void desplay( iconsLayoutLL *d){
     NSLog(@"current node data is {%i,%i,%i}",d->lastXpoint,d->lastYpoint,d->tagTracker);
 }
 -(void)insertFirstNode {
-    NSLog(@"width of the scroller is %f",sizeOFScroller.width);
-     widthOfEachLine=sizeOFScroller.width    ;
+      widthOfEachLine=sizeOFScroller.width    ;
     startPoint=(widthOfEachLine-maxNumberOfNodesInEachRow*(dimension) )/2 ;
     
     NSLog(@"Start Point %i",startPoint);
