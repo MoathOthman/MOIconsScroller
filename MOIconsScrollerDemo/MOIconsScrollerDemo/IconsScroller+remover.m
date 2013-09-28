@@ -14,7 +14,7 @@
  - (CGRect)SearchAndRemove:(NSNumber *)index {
     static CGRect preRect;
      //Modify the scroller size
-     [self setContentSize:CGSizeMake(320, _layoutLL->lastNode.prev.frame.origin.y+_layoutLL->lastNode.prev.frame.size.height)];
+     [self setContentSize:CGSizeMake(self.frame.size.width, _layoutLL->lastNode.prev.frame.origin.y+_layoutLL->lastNode.prev.frame.size.height)];
 
     [self.subviews enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
         

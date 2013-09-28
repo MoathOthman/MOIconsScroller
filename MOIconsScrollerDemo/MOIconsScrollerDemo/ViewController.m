@@ -50,7 +50,7 @@
     return imagesList.count;
 }
 -(NSInteger)MaxumberOfIconsInEachRow{
-    return 2;
+    return 1;
 }
 
 -(FolderIconView *)viewForIconAtIndex:(int)index{

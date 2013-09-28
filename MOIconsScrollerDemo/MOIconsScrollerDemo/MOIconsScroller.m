@@ -64,6 +64,8 @@
  -(void)addIcon:(FolderIconView*)icon{
     
     [_layoutLL addAnode];
+     NSLog(@"sscroller width is %f",self.frame.size.width);
+
       [self setContentSize:CGSizeMake(self.frame.size.width, _layoutLL->lastNode.frame.origin.y+_layoutLL->lastNode.frame.size.height)];
      
      if (self.contentSize.height>self.bounds.size.height) {

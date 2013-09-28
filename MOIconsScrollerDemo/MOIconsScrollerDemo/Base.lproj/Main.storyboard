@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Ntt-cN-aEq" customClass="MOIconsScroller">
-                                <rect key="frame" x="0.0" y="70" width="232" height="454"/>
+                                <rect key="frame" x="0.0" y="70" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" id="T9p-Sl-Urd">

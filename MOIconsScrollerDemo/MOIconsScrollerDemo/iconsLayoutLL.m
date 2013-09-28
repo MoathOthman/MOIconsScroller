@@ -36,7 +36,7 @@ void desplay( iconsLayoutLL *d){
 -(void)insertFirstNode {
     NSLog(@"width of the scroller is %f",sizeOFScroller.width);
      widthOfEachLine=sizeOFScroller.width    ;
-    startPoint=(widthOfEachLine-maxNumberOfNodesInEachRow*(dimension) )/2+15;
+    startPoint=(widthOfEachLine-maxNumberOfNodesInEachRow*(dimension) )/2 ;
     
     NSLog(@"Start Point %i",startPoint);
 
