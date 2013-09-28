@@ -42,5 +42,7 @@
 -(void)addIcon:(UIView*)icon;
 -(void)print;
 
+-(void)removeIconAtIndex:(NSNumber*)index;
+
 
 @end

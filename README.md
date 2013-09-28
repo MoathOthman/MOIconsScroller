@@ -4,6 +4,8 @@ MOIconsScroller
 
 icons style View Which meant to look like the icons on springboard or simply grid View, made to be **simple** to use with the basic functionalities (**add and remove**) .
 
+#Screen Shots
+![image](https://www.dropbox.com/s/9ohiyl9924hzgxk/iOS%20Simulator%20Screen%20shot%20Sep%2028%2C%202013%207.36.21%20PM.png? )
 
 
 #Structure
@@ -116,5 +118,9 @@ In order to use ***MOIconsScroller*** you need to setup some delegates and DataS
 
 ### Issues
 -Folder iconView width is hard fixed , you need to change the dimension Variable if you want to change the folder iconView dimension .. Also the margin (5) is hard fixed ..
-- This View handle dynamic number of icons per row but limited to three which is related to the first issue if you changed the width of the folderIconView and decrease the dimension Variable you can get more icons ..
-- This view has a dynamic hight but not width which serves as a vertical scroller not horizontal this feature will be added ASAP.
+- This Controller handle dynamic number of icons per row but limited to three which is related to the first issue if you changed the width of the folderIconView and decrease the dimension Variable you can get more icons ..
+- This Controller has a dynamic hight but not width which serves as a vertical scroller not horizontal this feature will be added ASAP.
+
+##License 
+
+This Controller is under MIT License, Check the License File.

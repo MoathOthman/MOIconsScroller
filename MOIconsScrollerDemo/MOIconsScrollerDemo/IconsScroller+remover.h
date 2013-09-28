@@ -25,6 +25,5 @@
 #import "MOIconsScroller.h"
 
 @interface MOIconsScroller (remover)
--(void)removeIconAtIndex:(NSNumber*)index;
 
 @end
