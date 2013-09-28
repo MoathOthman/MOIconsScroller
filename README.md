@@ -57,13 +57,21 @@ In order to use ***MOIconsScroller*** you need to setup some delegates and DataS
 
 * implement the *iconTappedNotificationRecieved*
    in this way 
->    -(void)iconTappedNotificationRecieved:(NSNotification*)notification{
-    if ([[notification name]isEqualToString:iconDeletedNotification]) {
-        [_iconScroller performSelector:@selector(removeIconAtIndex:) withObject: [notification object]  afterDelay:0];
-    }
-}
+     
+>  -(void)iconTappedNotificationRecieved:(NSNotification*)notification{
 
-   * you may change the delay the way you want ..
+
+   
+> > >  if ([[notification name]isEqualToString:iconDeletedNotification]) {
+  
+> > > `  [_iconScroller performSelector:@selector(removeIconAtIndex:) withObject: [notification object]  afterDelay:0];
+> `  
+>     }
+    
+    
+> }  
+
+>    * you may change the delay the way you want ..
 
 
 
