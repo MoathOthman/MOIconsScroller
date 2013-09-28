@@ -81,15 +81,14 @@ In order to use ***MOIconsScroller*** you need to setup some delegates and DataS
   e.g.
   
   
-  
-   `
- 
- `-(NSInteger)numberOfIcons{
+-(NSInteger)numberOfIcons{
  
     return imagesList.count;
     
-}`
-`-(NSInteger)MaxumberOfIconsInEachRow{
+} 
+ 
+ 
+ -(NSInteger)MaxumberOfIconsInEachRow{
 
     return 1;
     
@@ -113,3 +112,9 @@ In order to use ***MOIconsScroller*** you need to setup some delegates and DataS
     
 }`
 `
+
+
+### Issues
+-Folder iconView width is hard fixed , you need to change the dimension Variable if you want to change the folder iconView dimension .. Also the margin (5) is hard fixed ..
+- This View handle dynamic number of icons per row but limited to three which is related to the first issue if you changed the width of the folderIconView and decrease the dimension Variable you can get more icons ..
+- This view has a dynamic hight but not width which serves as a vertical scroller not horizontal this feature will be added ASAP.
