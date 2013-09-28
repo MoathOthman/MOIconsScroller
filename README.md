@@ -5,7 +5,7 @@ MOIconsScroller
 icons style View Which meant to look like the icons on springboard or simply grid View, made to be **simple** to use with the basic functionalities (**add and remove**) .
 
 #Screen Shots
-![image](https://www.dropbox.com/s/9ohiyl9924hzgxk/iOS%20Simulator%20Screen%20shot%20Sep%2028%2C%202013%207.36.21%20PM.png? )
+![image](https://www.dropbox.com/s/9ohiyl9924hzgxk/iOS%20Simulator%20Screen%20shot%20Sep%2028%2C%202013%207.36.21%20PM.png?m)
 
 
 #Structure
