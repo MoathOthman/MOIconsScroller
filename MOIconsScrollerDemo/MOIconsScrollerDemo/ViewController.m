@@ -35,7 +35,14 @@
     NSString*name;
     name=[NSString stringWithFormat:@"icon#%i",x];
     x++;
-    [[NSNotificationCenter defaultCenter]postNotificationName:AddNewIconNotification object:name];
+    
+    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(5, 0, 90, 90)];
+    _iconView.tag   =x;
+    
+    _iconView.titleLAbel.text=imagesList[2];
+    
+    _iconView.iconImageView.image= [UIImage imageNamed:imagesList[2]];
+    [[NSNotificationCenter defaultCenter]postNotificationName:AddNewIconNotification object:_iconView];
 }
 
 -(void)iconTappedNotificationRecieved:(NSNotification*)notification{
@@ -50,12 +57,12 @@
     return imagesList.count;
 }
 -(NSInteger)MaxumberOfIconsInEachRow{
-    return 1;
+    return 2;
 }
 
 -(FolderIconView *)viewForIconAtIndex:(int)index{
     
-    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(15, 0, 90, 90)];
+    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(5, 0, 90, 90)];
     _iconView.tag   =index;
     
     _iconView.titleLAbel.text=imagesList[index];

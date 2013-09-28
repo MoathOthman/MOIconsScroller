@@ -43,7 +43,7 @@
     NSLog(@"tap icon notification recieved with tag %@,notoficatio %@",[notification object], notification  );
     
     if ([notification.name isEqualToString:AddNewIconNotification]){
-        [self addNewIcon:self withName:[notification object]];
+        [self addNewIcon:self withView:[notification object]];
         
     }else  if ([notification.name isEqualToString:iconTappedNotification]) {
         if (_iconDelegate &&[_iconDelegate respondsToSelector:@selector(iconView:didTappedAtIndex:)]) {
@@ -52,18 +52,16 @@
     }
     
 }
--(void)addNewIcon:(MOIconsScroller*)scroller withName:(NSString*)name{
-    NSLog(@"number of icons is %i",[_dataSource numberOfIcons]);
+-(void)addNewIcon:(MOIconsScroller*)scroller withView:(FolderIconView*)_View{
     
-    FolderIconView *_iconView=[[FolderIconView alloc]initWithFrame:CGRectMake(15, 0, 90, 90)];
-    [_iconView setBackgroundColor:[UIColor greenColor]];
-    _iconView.titleLAbel.text=name;
-    [scroller performSelector:@selector(addIcon:) withObject:_iconView afterDelay:0];
+    [scroller performSelector:@selector(addIcon:) withObject:_View afterDelay:0];
     
 }
  -(void)addIcon:(FolderIconView*)icon{
     
     [_layoutLL addAnode];
+     
+     
      NSLog(@"sscroller width is %f",self.frame.size.width);
 
       [self setContentSize:CGSizeMake(self.frame.size.width, _layoutLL->lastNode.frame.origin.y+_layoutLL->lastNode.frame.size.height)];

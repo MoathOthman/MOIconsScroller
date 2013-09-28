@@ -5,7 +5,7 @@
 //  Created by moath othman on 8/9/13.
 //  Copyright (c) 2013 moath othman. All rights reserved.
 //
-static float dimension=120;
+static float dimension=100;
 #pragma unused(dimension)
 #import "IconView.h"
 @interface IconNode : NSObject

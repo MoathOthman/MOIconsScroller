@@ -37,7 +37,7 @@ void desplay( iconsLayoutLL *d){
     
     widthOfEachLine=sizeOFScroller.width    ;
     
-    startPoint=(widthOfEachLine-maxNumberOfNodesInEachRow*(dimension) )/2 ;
+    startPoint=(widthOfEachLine-maxNumberOfNodesInEachRow*(dimension) )/2 +5;
     
     NSLog(@"Start Point %i",startPoint);
 
@@ -58,7 +58,7 @@ void desplay( iconsLayoutLL *d){
         xCounter=1;
     }else{
         //same line
-        lastXpoint+=105;
+        lastXpoint+=95;
         xCounter++;
     }
     tagTracker+=1;
@@ -79,7 +79,7 @@ void desplay( iconsLayoutLL *d){
     
     if (lastXpoint>=startPoint ) {//\\x=120
         //we hit the end of the row
-        lastXpoint-=105;
+        lastXpoint-=95;
         xCounter --;
     }else  {
         
